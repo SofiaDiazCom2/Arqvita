@@ -1,0 +1,27 @@
+.grid-container {
+    display: grid;
+    grid-auto-rows: 22rem;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    column-gap: 15vw;
+    row-gap: 45vw;
+    max-width: 90vw;
+    margin-left: 200px;
+    margin-top: 10px;
+}
+
+.grid-container img {
+    width: 450px;
+    height: auto;
+    min-width: 300px;
+
+}
+
+.grid-item-1, .grid-item-2{
+    object-fit: cover;
+    transition: transform 0.8s;
+    height: 100%;
+}
+
+.grid-item-1:hover, .grid-item-2:hover {
+    transform: scale(1.5);
+}

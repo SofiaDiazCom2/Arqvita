@@ -1,5 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
     const texidImage = document.querySelector('.texid');
+    const boton1 = document.querySelector('.boton-1 button');
+    const fiona = document.querySelector('.fiona');
+    const verMas = document.querySelector('.ver-mas');
+    const telefono = document.querySelector('.telefono');
+    const nombre = document.querySelector('.nombre');
+    const flechaup = document.querySelector('.flecha-up');
+    const flechadown = document.querySelector('.flecha-down');
+    const flechaabajo = document.querySelector('.flecha-abajo');
+    const filtro = document.querySelector('.filtro');
+    const nav = document.querySelector('ul');
+
     const popup = document.getElementById('popup');
     const closeBtn = document.querySelector('.close-btn');
     const submitBtn = document.getElementById('submit-btn');
@@ -10,6 +21,46 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Mostrar el pop-up al hacer clic en la imagen
     texidImage.addEventListener('click', () => {
+        popup.style.display = 'flex'; // Muestra el pop-up
+    });
+
+    boton1.addEventListener('click', () => {
+        popup.style.display = 'flex'; // Muestra el pop-up
+    });
+
+    fiona.addEventListener('click', () => {
+        popup.style.display = 'flex'; // Muestra el pop-up
+    });
+
+    verMas.addEventListener('click', () => {
+        popup.style.display = 'flex'; // Muestra el pop-up
+    });
+
+    telefono.addEventListener('click', () => {
+        popup.style.display = 'flex'; // Muestra el pop-up
+    });
+
+    nombre.addEventListener('click', () => {
+        popup.style.display = 'flex'; // Muestra el pop-up
+    });
+
+    flechaup.addEventListener('click', () => {
+        popup.style.display = 'flex'; // Muestra el pop-up
+    });
+
+    flechadown.addEventListener('click', () => {
+        popup.style.display = 'flex'; // Muestra el pop-up
+    });
+
+    filtro.addEventListener('click', () => {
+        popup.style.display = 'flex'; // Muestra el pop-up
+    });
+
+    flechaabajo.addEventListener('click', () => {
+        popup.style.display = 'flex'; // Muestra el pop-up
+    });
+
+    nav.addEventListener('click', () => {
         popup.style.display = 'flex'; // Muestra el pop-up
     });
 

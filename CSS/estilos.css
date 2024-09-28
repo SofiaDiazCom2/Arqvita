@@ -86,23 +86,23 @@ nav ul li a {
 /*-----------PRIMERA SECCIÓN-----------*/
 .seccion-1 {
     position: relative;
-    height: 100vh; 
+    height: 130vh;
     overflow: hidden;
-    background: url('../img/arriba1.png') no-repeat center top; 
-    background-size: cover; 
+    background: url('../img/arriba1.png') no-repeat center top;
+    background-size: cover;
     top: 0;
     z-index: 0;
 }
 
 .parallax-bg-2 {
-    background: url('../img/arriba2.png') no-repeat center center fixed; 
+    background: url('../img/arriba2.png') no-repeat center center fixed;
     position: absolute;
-    top: 0; 
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 1; 
-    z-index: -1; 
+    opacity: 1;
+    z-index: -1;
 }
 
 
@@ -174,7 +174,7 @@ nav ul li a {
     display: flex;
     justify-content: center;
     width: 95vw;
-    margin: -7.5% auto 0 auto;
+    margin: -7.5% 0 0 2vw;
     padding: 1%;
 }
 
@@ -185,6 +185,7 @@ nav ul li a {
     width: 100%;
     margin: 3% auto;
     height: auto;
+    cursor: pointer;
 }
 
 .item2-2 {
@@ -285,6 +286,11 @@ nav ul li a {
     width: 35vw;
 }
 
+.fiona,
+.texid {
+    cursor: pointer;
+}
+
 .flecha-costado-derecha,
 .flecha-costado-izquierda {
     display: none;
@@ -359,11 +365,10 @@ nav ul li a {
 .elementos {
     display: flex;
     flex-direction: column;
-    margin-top: -47vw;
-    margin-left: 3.5vw;
+    margin-top: -50vw;
+    margin-left: 6vw;
     width: 30%;
     align-items: center;
-    margin-right: 4vw;
 }
 
 .redes {
@@ -374,12 +379,16 @@ nav ul li a {
 .flecha-down {
     margin: 2.5vw auto;
     width: 3.5vw;
+    cursor: pointer;
 }
 
 .fondo {
     width: 10vw;
 }
 
+.item3-der{
+    width: 10vw;
+}
 
 /*--------SECCIÓN 4----------*/
 
@@ -403,17 +412,17 @@ nav ul li a {
 /*---------------SECCIÓN 4: CAROUSEL----------------*/
 
 .carousel-container {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 20vw;
     margin: 0 auto;
     position: relative;
 }
 
 .carousel {
-    width: 50vw; 
-    margin: 0 auto; 
+    width: 50vw;
+    margin: 0 auto;
 }
 
 
@@ -527,7 +536,6 @@ nav ul li a {
     transform: rotate(-45deg) translateY(-50%);
     transition: right 0.15s ease-in-out;
     width: 5px;
-
 }
 
 .carousel-controls-next:hover:before {
@@ -558,7 +566,7 @@ nav ul li a {
 
 }
 
-.diseñador{
+.diseñador {
     width: 55vw;
     justify-content: center;
     align-items: center;
@@ -569,48 +577,49 @@ nav ul li a {
 /*-----------SECCIÓN 5----------*/
 
 .seccion-5 {
-    display: flex; 
-    flex-direction: row; 
-    flex-wrap: wrap; 
-    margin: 10vw 0 0 0vw; /* Aumenta el margen superior aquí */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10vw 0 0 0vw;
+    /* Aumenta el margen superior aquí */
     gap: 5vw;
     position: relative;
-    height: 100vh; 
+    height: 100vh;
     background-color: #6B4F38;
     overflow: hidden;
-    background: url('../img/abajo2.png') no-repeat center center; 
-    background-size: cover; 
+    background: url('../img/abajo2.png') no-repeat center center;
+    background-size: cover;
     z-index: 0;
 }
 
 .parallax-bg-3 {
-    background: url('../img/abajo1.png') no-repeat center center fixed; 
+    background: url('../img/abajo1.png') no-repeat center center fixed;
     position: absolute;
-    top: 0; 
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 1; 
-    z-index: -1; 
+    opacity: 1;
+    z-index: -1;
 }
 
 
-.item-5-izq img{
+.item-5-izq img {
     width: 55vw;
     margin-left: 5vw;
     height: 30vw;
     margin-top: 5vw;
 }
 
-.item-5-izq h5{
-font-size: 2.8vw;
-font-weight: 500;
-margin-top: -25vw;
-margin-left: 8vw;
+.item-5-izq h5 {
+    font-size: 2.8vw;
+    font-weight: 500;
+    margin-top: -25vw;
+    margin-left: 8vw;
 }
 
 
-.item-5-izq p{
+.item-5-izq p {
     font-size: 1.4vw;
     font-weight: 300;
     width: 49vw;
@@ -618,7 +627,7 @@ margin-left: 8vw;
     margin-top: 2vw;
 }
 
-.item-5-izq input{
+.item-5-izq input {
     position: relative;
     z-index: 4;
     display: flex;
@@ -634,18 +643,18 @@ margin-left: 8vw;
     font-size: 1.2vw;
 }
 
-.item-5-izq input::placeholder{
+.item-5-izq input::placeholder {
     color: #fff;
 }
 
-.asistente-grande{
+.asistente-grande {
     margin-top: 4vw;
     width: 23vw;
     z-index: 4;
 
 }
 
-.asistente-chico{
+.asistente-chico {
     display: none;
 }
 
@@ -717,7 +726,7 @@ margin-left: 8vw;
 
 
 /*------------FOOTER---------*/
-footer img{
+footer img {
     background-color: #6B4F38;
     position: relative;
     margin-top: 0;
@@ -726,9 +735,15 @@ footer img{
 }
 
 
+
 /* --------- MEDIA ----------*/
 
 @media (max-width: 800px) {
+
+    body {
+        width: 100%;
+    }
+
     nav ul li {
         display: none;
     }
@@ -738,23 +753,30 @@ footer img{
     }
 
     .seccion-1 {
-        position: relative; /* Añadir esto */
-        height: 55vh; /* Reduce la altura */
+        position: relative;
+        /* Añadir esto */
+        height: 55vh;
+        /* Reduce la altura */
         background: url('../img/arriba1.png') no-repeat center top;
         background-size: cover;
-        overflow: hidden; /* Para ocultar cualquier desbordamiento */
+        overflow: hidden;
+        /* Para ocultar cualquier desbordamiento */
     }
 
     .parallax-bg-2 {
-        background: url('../img/arriba2.png') no-repeat center bottom; 
-        background-attachment: fixed; /* Para el efecto parallax */
-        position: absolute; /* Asegurarse de que sea absoluto */
+        background: url('../img/arriba2.png') no-repeat center bottom;
+        background-attachment: fixed;
+        /* Para el efecto parallax */
+        position: absolute;
+        /* Asegurarse de que sea absoluto */
         top: 0;
         left: 0;
         width: 100%;
-        height: 100%; /* Cambia a 100% para ocupar toda la sección */
-        opacity: 1; 
-        z-index: -1; /* Asegurarse de que esté detrás de .seccion-1 */
+        height: 100%;
+        /* Cambia a 100% para ocupar toda la sección */
+        opacity: 1;
+        z-index: -1;
+        /* Asegurarse de que esté detrás de .seccion-1 */
     }
 
 
@@ -871,6 +893,10 @@ footer img{
         width: 40vw;
     }
 
+    .item3-izq{
+    width: 95vw;
+    }
+
     .item3-izq-1 h5 {
         display: flex;
         font-size: 7.5vw;
@@ -964,7 +990,7 @@ footer img{
     }
 
     .elementos {
-        margin-left: 58vw;
+        margin-left: 71vw;
         margin-top: -75vw;
     }
 
@@ -994,7 +1020,7 @@ footer img{
         display: none;
     }
 
-    .asistente-grande{
+    .asistente-grande {
         display: none;
     }
 
@@ -1005,38 +1031,42 @@ footer img{
         gap: 8vw;
         align-items: center;
         justify-items: center;
-        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+        flex-direction: column;
+        /* Cambiar a columna en pantallas pequeñas */
         height: 800px;
     }
 
-    .item-5-izq img{
+    .item-5-izq img {
         width: 50vw;
         margin-left: 5vw;
         height: 40vw;
     }
 
-    .item-5-izq h5{
+    .item-5-izq h5 {
         width: 30vw;
         margin-top: -34vw;
     }
 
-    .item-5-izq p{
+    .item-5-izq p {
         width: 30vw;
         margin-bottom: 5vw;
     }
 
-    .item-5-izq input{
+    .item-5-izq input {
         width: 40vw;
         height: 4vw;
     }
 
-    .asistente-chico{
+    .asistente-chico {
         display: block;
         width: 50vw;
         margin-left: 4vw;
         margin-top: 2vw;
     }
-    
+
+.seccion-5{
+    height: 90vw;
+}
 
 }
 

@@ -131,4 +131,3 @@ const carouselContainer = document.querySelector('.carousel-container');
 const carouselItems = document.querySelectorAll('.carousel-item');
 const exampleCarousel = new Carousel(carouselContainer, carouselItems);
 
-

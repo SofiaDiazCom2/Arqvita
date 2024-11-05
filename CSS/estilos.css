@@ -40,7 +40,7 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
+    width: 70%;
     display: flex;
     padding: 20px;
     text-align: center;
@@ -70,19 +70,15 @@ body {
     text-align: center;
 }
 
-.fecha p,
-.fecha span {
+.fecha p {
     font-family: "Jura", sans-serif;
     font-size: 4vw;
 }
 
-.fecha span {
-    font-weight: 600;
-}
 
 .cuenta-atras {
     display: flex;
-    gap: 3vw;
+    gap: 5vw;
     align-items: center;
     justify-content: center;
     font-family: "Inter", sans-serif;
@@ -1184,7 +1180,5 @@ footer img {
     .seccion-2 {
         margin-top: 45vw;
     }
-
-
 
 }

@@ -131,3 +131,57 @@ const carouselContainer = document.querySelector('.carousel-container');
 const carouselItems = document.querySelectorAll('.carousel-item');
 const exampleCarousel = new Carousel(carouselContainer, carouselItems);
 
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Variables para el popup regresivo
+    var popupRegresiva = document.getElementById('popup-regresiva');
+    var closeBoton = document.querySelector('.close-boton');
+
+    // Fecha límite para la cuenta regresiva (formato de mes/día/año)
+    var fechaObjetivo = new Date("11/15/2024 00:00:00").getTime();
+
+    function actualizarCuentaRegresiva() {
+        var ahora = new Date().getTime();
+        var diferencia = fechaObjetivo - ahora;
+
+        // Calcular días, horas, minutos y segundos restantes
+        var dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+        var horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
+        var segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
+
+        // Actualizar contenido de la cuenta regresiva en el popup
+        document.getElementById("dias").textContent = dias;
+        document.getElementById("horas").textContent = horas;
+        document.getElementById("minutos").textContent = minutos;
+        document.getElementById("segundos").textContent = segundos;
+
+        // Si la cuenta llega a cero, se puede mostrar un mensaje o redirigir
+        if (diferencia < 0) {
+            clearInterval(intervalo);
+            document.getElementById("dias").textContent = "00";
+            document.getElementById("horas").textContent = "00";
+            document.getElementById("minutos").textContent = "00";
+            document.getElementById("segundos").textContent = "00";
+            alert("¡El evento ha comenzado!");
+        }
+    }
+
+    // Actualizar cada segundo
+    var intervalo = setInterval(actualizarCuentaRegresiva, 1000);
+
+    // Mostrar y cerrar el popup regresiva
+    function mostrarPopupRegresiva() {
+        popupRegresiva.style.display = 'block';
+
+    }
+
+    closeBoton.addEventListener('click', function () {
+        popupRegresiva.style.display = 'none';
+
+
+    });
+
+    mostrarPopupRegresiva();
+});
+

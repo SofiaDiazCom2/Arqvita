@@ -82,7 +82,7 @@ body {
 
 .cuenta-atras {
     display: flex;
-    gap: 3rem;
+    gap: 5vw;
     align-items: center;
     justify-content: center;
     font-family: "Inter", sans-serif;

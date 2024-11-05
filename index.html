@@ -21,6 +21,42 @@
 
 <body>
 
+    <div id="popup-regresiva" class="popup-regresiva">
+        <div class="popup-contenido">
+            <span class="close-boton">&times;</span>
+
+            <div class="regresiva">
+                <div class="fecha">
+                    <p>¿Cuánto falta para el <span id="fecha">15/11/2024</span>?</p>
+                </div>
+
+                <div class="cuenta-atras">
+                    <div class="grupo">
+                        <p class="grande" id="dias">00</p>
+                        <p class="chico">días</p>
+                    </div>
+
+                    <div class="grupo">
+                        <p class="grande" id="horas">00</p>
+                        <p class="chico">horas</p>
+                    </div>
+
+                    <div class="grupo">
+                        <p class="grande" id="minutos">00</p>
+                        <p class="chico">minutos</p>
+                    </div>
+
+                    <div class="grupo">
+                        <p class="grande" id="segundos">00</p>
+                        <p class="chico">segundos</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
     <nav>
         <ul>
             <img src="./img/Artboard 2 1.png" alt="" class="logo" style="width: 65px; height: 40px;">
@@ -33,25 +69,25 @@
         </ul>
     </nav>
 
-        <section class="seccion-1">
-            <div class="parallax parallax-bg-2"></div>
-            <div class="item-1">
-                <div class="texto-1">
-                    <h5>ARQVITA ESTUDIO</h5>
-                    <h4>Tecnología sustensable</h4>
-                </div>
-
-                <div class="boton-1">
-                    <button>Comencemos</button>
-                    <img src="./img/flecha-grande.png" alt="">
-                </div>
+    <section class="seccion-1">
+        <div class="parallax parallax-bg-2"></div>
+        <div class="item-1">
+            <div class="texto-1">
+                <h5>ARQVITA ESTUDIO</h5>
+                <h4>Tecnología sustensable</h4>
             </div>
 
-            <div class="item-2">
-                <h1>DISEÑOS ORGÁNICOS</h1>
-                <p>Comprometidos con el futuro, respetando las raíces del pasado.</p>
+            <div class="boton-1">
+                <button>Comencemos</button>
+                <img src="./img/flecha-grande.png" alt="">
             </div>
-        </section>
+        </div>
+
+        <div class="item-2">
+            <h1>DISEÑOS ORGÁNICOS</h1>
+            <p>Comprometidos con el futuro, respetando las raíces del pasado.</p>
+        </div>
+    </section>
 
     <section class="seccion-2">
         <div class="item2-1">
@@ -172,14 +208,15 @@
 
     </section>
 
-    <section class="seccion-5" style="margin-bottom: 0px; margin-top: 15vh; margin-top: 0;" >
+    <section class="seccion-5" style="margin-bottom: 0px; margin-top: 15vh; margin-top: 0;">
 
         <div class="parallax parallax-bg-3"></div>
 
         <div class="item-5-izq">
             <img src="./img/contenedor-entrevista.png" alt="">
             <h5>Comunicate para tener una entrevista</h5>
-            <p>La consulta te abrirá a opciones y nuevas perspectivas de lo que podemos hacer para vos, porque vos son
+            <p>La consulta te abrirá a opciones y nuevas perspectivas de lo que podemos hacer para vos, porque
+                vos son
                 lo importante.</p>
             <input type="text" placeholder="Nombre" id="inputs" class="nombre">
             <input type="text" placeholder="Teléfono de contacto" id="inputs" class="telefono">
